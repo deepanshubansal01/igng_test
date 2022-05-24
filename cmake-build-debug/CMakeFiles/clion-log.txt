@@ -1,0 +1,13 @@
+/home/deepanshu/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/deepanshu/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/221.5591.52/bin/ninja/linux/ninja -G Ninja -S /home/deepanshu/deepanshu/osrf/ignition_test -B /home/deepanshu/deepanshu/osrf/ignition_test/cmake-build-debug
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Searching for dependencies of ignition-math6
+-- Looking for sdformat12 -- found version 12.5.0
+-- Searching for dependencies of sdformat12
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 6.2.0
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Looking for ignition-utils1 -- found version 1.4.0
+-- Searching for dependencies of ignition-utils1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/deepanshu/deepanshu/osrf/ignition_test/cmake-build-debug
