@@ -9,7 +9,7 @@
     <model name="box">
       <pose>0 0 0 0 0 0</pose>
       <link name="box_1">
-        <pose>1 0 0 0 0 0</pose>
+        <pose>1 2 0 0 0 0</pose>
         <inertial>
           <inertia>
             <ixx>0.16666</ixx>
@@ -44,7 +44,7 @@
       </link>
 
       <link name="box_2">
-        <pose>2 0 0 0 0 0</pose>
+        <pose>2 2 0 0 0 0</pose>
         <inertial>
           <inertia>
             <ixx>0.16666</ixx>

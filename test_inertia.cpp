@@ -24,22 +24,23 @@ int main(int argc, char *argv[]) {
     return -1;
   }
 
-  std::cout << model->LinkCount() << std::endl;
+  std::cout << "Link count: << " << model->LinkCount() << std::endl;
 
   ignition::math::Inertiald inertia_1 =  model->LinkByName("box_1")->Inertial();
   ignition::math::Inertiald inertia_2 =  model->LinkByName("box_2")->Inertial();
   ignition::math::Inertiald total = inertia_1 + inertia_2;
 
-  std::cout << model->LinkByName("box_1")->RawPose().X() << std::endl;
+  std::cout << "Raw pose: " << model->LinkByName("box_1")->RawPose().X() << std::endl;
 
-  std::cout << "mass 1" << std::endl;
-  std::cout << inertia_1.MassMatrix().Mass() << std::endl;
+  std::cout << "mass 1: " << inertia_1.MassMatrix().Mass() << std::endl;
+  std::cout << "mass 2: " << inertia_2.MassMatrix().Mass()  << std::endl;
+  std::cout << "Total mass: " << total.MassMatrix().Mass() << std::endl;
+github
 
-  std::cout << "mass 2" << std::endl;
-  std::cout << inertia_2.MassMatrix().Mass() << std::endl;
+  std::cout << "Ixx 1: " <<  inertia_1.Moi()(0, 0) << " " <<  "Iyy 1: " <<  inertia_1.Moi()(1, 1) << std::endl;
+  std::cout << "Ixx 2: " <<  inertia_2.Moi()(0, 0) << " " <<  "Iyy 2: " <<  inertia_2.Moi()(1, 1) << std::endl;
+  std::cout << "Ixx 3: " <<  total.Moi()(0, 0) << " " <<  "Iyy 3: " <<  total.Moi()(1, 1) << std::endl;
 
-  std::cout << "Total mass" << std::endl;
-  std::cout << total.MassMatrix().Mass() << std::endl;
 
   std::cout << inertia_1.Pose().X() << " " <<  inertia_1.Pose().Y() << " " << inertia_1.Pose().Z() << std::endl;
   std::cout << inertia_2.Pose().X() << " " <<  inertia_2.Pose().Y() << " " << inertia_2.Pose().Z() << std::endl;
