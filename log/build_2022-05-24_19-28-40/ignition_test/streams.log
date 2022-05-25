@@ -1,0 +1,39 @@
+[0.016s] Invoking command in '/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test': /usr/local/bin/cmake /home/deepanshu/deepanshu/osrf/ignition_test -DCMAKE_INSTALL_PREFIX=/home/deepanshu/deepanshu/osrf/ignition_test/install
+[0.077s] -- The C compiler identification is GNU 9.4.0
+[0.133s] -- The CXX compiler identification is GNU 9.4.0
+[0.142s] -- Detecting C compiler ABI info
+[0.216s] -- Detecting C compiler ABI info - done
+[0.231s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.231s] -- Detecting C compile features
+[0.231s] -- Detecting C compile features - done
+[0.236s] -- Detecting CXX compiler ABI info
+[0.332s] -- Detecting CXX compiler ABI info - done
+[0.353s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.353s] -- Detecting CXX compile features
+[0.354s] -- Detecting CXX compile features - done
+[0.364s] -- Looking for ignition-math6 -- found version 6.11.0
+[0.365s] -- Searching for dependencies of ignition-math6
+[0.367s] -- Looking for sdformat12 -- found version 12.5.0
+[0.368s] -- Searching for dependencies of sdformat12
+[0.373s] -- Checking for module 'tinyxml2'
+[0.400s] --   Found tinyxml2, version 6.2.0
+[0.496s] -- Looking for ignition-math6 -- found version 6.11.0
+[0.497s] -- Looking for ignition-utils1 -- found version 1.4.0
+[0.498s] -- Searching for dependencies of ignition-utils1
+[0.504s] -- Configuring done
+[0.510s] -- Generating done
+[0.511s] -- Build files have been written to: /home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test
+[0.520s] Invoked command in '/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test' returned '0': /usr/local/bin/cmake /home/deepanshu/deepanshu/osrf/ignition_test -DCMAKE_INSTALL_PREFIX=/home/deepanshu/deepanshu/osrf/ignition_test/install
+[0.521s] Invoking command in '/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test': /usr/local/bin/cmake --build /home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test -- -j12 -l12
+[0.562s] [ 50%] [32mBuilding CXX object CMakeFiles/test_inertia.dir/test_inertia.cpp.o[0m
+[2.478s] [01m[K/home/deepanshu/deepanshu/osrf/ignition_test/test_inertia.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.478s] [01m[K/home/deepanshu/deepanshu/osrf/ignition_test/test_inertia.cpp:42:50:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[Kignition::math::v6::Inertiald[m[K’ {aka ‘[01m[Kignition::math::v6::Inertial<double>[m[K’} and ‘[01m[Kignition::math::v6::Inertiald[m[K’ {aka ‘[01m[Kignition::math::v6::Inertial<double>[m[K’})
+[2.478s]    42 |      ignition::math::Inertiald inertia_4 = [32m[Ktotal[m[K [01;31m[K-[m[K [34m[Kinertia_2[m[K;
+[2.478s]       |                                            [32m[K~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~~~~~[m[K
+[2.478s]       |                                            [32m[K|[m[K       [34m[K|[m[K
+[2.478s]       |                                            [32m[K|[m[K       [34m[KInertial<[...]>[m[K
+[2.479s]       |                                            [32m[KInertial<[...]>[m[K
+[3.008s] make[2]: *** [CMakeFiles/test_inertia.dir/build.make:76: CMakeFiles/test_inertia.dir/test_inertia.cpp.o] Error 1
+[3.008s] make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/test_inertia.dir/all] Error 2
+[3.008s] make: *** [Makefile:91: all] Error 2
+[3.011s] Invoked command in '/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test' returned '2': /usr/local/bin/cmake --build /home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test -- -j12 -l12

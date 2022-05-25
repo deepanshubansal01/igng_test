@@ -12,6 +12,7 @@
 
 int main(int argc, char *argv[]) {
 
+    std::cout << "BEFORE #################################" << std::endl;
     ignition::math::MassMatrix3d mm1;
     mm1.SetFromBox(1,  ignition::math::Vector3d(1.0, 1.0, 1.0));
     ignition::math::Inertiald inertia_1(mm1, ignition::math::Pose3d(1, 2, 0, 0, 0, 0));
@@ -33,6 +34,20 @@ int main(int argc, char *argv[]) {
      std::cout << inertia_1.Pose().X() << " " <<  inertia_1.Pose().Y() << " " << inertia_1.Pose().Z() << std::endl;
      std::cout << inertia_2.Pose().X() << " " <<  inertia_2.Pose().Y() << " " << inertia_2.Pose().Z() << std::endl;
      std::cout << total.Pose().X() << " " <<  total.Pose().Y() << " " << total.Pose().Z() << std::endl;
+
+     std::cout << "AFTER #################################" << std::endl;
+     // given total inertia and inertia_2 from above
+     // calculate inertia_1 and see if it's same as above inertia_1
+
+     auto inertia_4 = total - inertia_2;
+     std::cout << "mass 1: " << inertia_4.MassMatrix().Mass() << std::endl;
+     std::cout << "mass 2: " << inertia_2.MassMatrix().Mass()  << std::endl;
+     std::cout << "Total mass: " << total.MassMatrix().Mass() << std::endl;
+
+     std::cout << "Ixx 1: " <<  inertia_4.Moi()(0, 0) << " " <<  "Iyy 1: " <<  inertia_4.Moi()(1, 1) << std::endl;
+     std::cout << "Ixx 2: " <<  inertia_2.Moi()(0, 0) << " " <<  "Iyy 2: " <<  inertia_2.Moi()(1, 1) << std::endl;
+     std::cout << "Ixx 3: " <<  total.Moi()(0, 0) << " " <<  "Iyy 3: " <<  total.Moi()(1, 1) << std::endl;
+
 
 //   sdf::Root root;
 //   if (!root.Load(argv[1]).empty()) {

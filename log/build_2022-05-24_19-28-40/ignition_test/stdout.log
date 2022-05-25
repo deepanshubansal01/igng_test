@@ -1,0 +1,25 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Searching for dependencies of ignition-math6
+-- Looking for sdformat12 -- found version 12.5.0
+-- Searching for dependencies of sdformat12
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 6.2.0
+-- Looking for ignition-math6 -- found version 6.11.0
+-- Looking for ignition-utils1 -- found version 1.4.0
+-- Searching for dependencies of ignition-utils1
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test
+[ 50%] [32mBuilding CXX object CMakeFiles/test_inertia.dir/test_inertia.cpp.o[0m

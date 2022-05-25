@@ -1,0 +1,2 @@
+Invoking command in '/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test': /usr/local/bin/cmake --build /home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test -- -j12 -l12
+Invoked command in '/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test' returned '2': /usr/local/bin/cmake --build /home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test -- -j12 -l12

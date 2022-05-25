@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_inertia.dir/test_inertia.cpp.o -o test_inertia  /usr/lib/x86_64-linux-gnu/libsdformat12.so.12.5.0 /usr/lib/x86_64-linux-gnu/libignition-math6.so.6.11.0 /usr/lib/x86_64-linux-gnu/libignition-utils1.so.1.4.0 

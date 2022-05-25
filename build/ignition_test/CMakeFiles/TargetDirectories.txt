@@ -1,0 +1,3 @@
+/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test/CMakeFiles/test_inertia.dir
+/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test/CMakeFiles/edit_cache.dir
+/home/deepanshu/deepanshu/osrf/ignition_test/build/ignition_test/CMakeFiles/rebuild_cache.dir
